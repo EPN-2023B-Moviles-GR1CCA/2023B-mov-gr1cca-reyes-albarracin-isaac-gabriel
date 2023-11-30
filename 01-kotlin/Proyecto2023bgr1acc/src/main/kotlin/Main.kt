@@ -28,35 +28,32 @@ fun main() {
         ("C") -> {
             printin("Casado")
         }
-
         "S" -> {
-            printin("Soltero")
+            println("Soltero")
         }
-
         else -> {
-            printin("No sabemos")
+            println("No sabemos")
         }
-
+    }
     val coqueteo = if (estadoCivilWhen == "S") "Si" else "No"
-        calcularSueldo(10.00)
-                calcularSueldo(10.00, 15.00)
-            calcularSueldo(10.00, 12.00, 20.00)
-        //  Parametros nombrados
-        calcularSueldo(sueldo = 10.00)
-                calcularSueldo(sueldo = 10.00, tasa = 15.00)
-            calcularSueldo(sueldo = 10.00, tasa = 12.00, bonoEspecial = 20.00)
 
-        calcularSueldo(sueldo = 10.00, bonoEspecial = 20.00) // Named Parameters
-                calcularSueldo(10.00, bonoEspecial = 20.00) // Named Parameters
+    calcularSueldo(10.00)
+    calcularSueldo(10.00, 15.00)
+    calcularSueldo(10.00, 12.00, 20.00)
+    //  Parametros nombrados
+    calcularSueldo(sueldo = 10.00)
+    calcularSueldo(sueldo = 10.00, tasa = 15.00)
+    calcularSueldo(sueldo = 10.00, tasa = 12.00, bonoEspecial = 20.00)
 
-            calcularSueldo(bonoEspecial = 20.00, sueldo = 10.00, tasa = 14.00) //  Parametros nombrados
+    calcularSueldo(sueldo = 10.00, bonoEspecial = 20.00) // Named Parameters
+    calcularSueldo(10.00, bonoEspecial = 20.00) // Named Parameters
 
-
-            val sumaUno = Suma(1,1)
-            val sumaDos = Suma(null, 1)
-            val sumaTres = Suma(1, null)
+    calcularSueldo(bonoEspecial = 20.00, sueldo = 10.00, tasa = 14.00) //  Parametros nombrados
 
 
+    val sumaUno = Suma(1,1)
+    val sumaDos = Suma(null, 1)
+    val sumaTres = Suma(1, null)
 
 
     }
@@ -117,6 +114,34 @@ fun main() {
             if (dos == null) 0 else uno
         )
         // Si no lo necesitamos al bloque de codigo "{}" lo omitimos
+        constructor(//  cuarto constructor
+            uno: Int?, // parametros
+            dos: Int? // parametros
+        ) : this(  // llamada constructor primario
+            if (uno == null) 0 else uno,
+            if (dos == null) 0 else uno
+        )
+
+
+        // public por defecto, o usar private o protected
+        public fun sumar(): Int {
+            val total = numeroUno + numeroDos
+            agregarHistorial(total)
+            return total
+        }
+        companion object { // Atributos y Metodos "Compartidos"
+            // entre las instancias
+            val pi = 3.14
+            fun elevarAlCuadrado(num: Int): Int {
+                return num * num
+            }
+            val historialSumas = arrayListOf<Int>()
+            fun agregarHistorial(valorNuevaSuma:Int){
+                historialSumas.add(valorNuevaSuma)
+            }
+        }
+
+
 
     }
 
