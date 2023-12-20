@@ -2,11 +2,12 @@ package com.example.gr1accigra2023b
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 
 class ACicloVida : AppCompatActivity() {
     var textoGlobal=""
 
-    fun mostrarSnackBar(texto:String){
+    fun mostrarSnackbar(texto:String){
         textoGlobal=textoGlobal + " " + texto
         Snackbar
             .make(
@@ -19,7 +20,7 @@ class ACicloVida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aciclo_vida)
-        mostrarSnackBar("OnCreate")
+        mostrarSnackbar("OnCreate")
     }
 
     override fun onStart() {
@@ -51,5 +52,30 @@ class ACicloVida : AppCompatActivity() {
         super.onDestroy()
         mostrarSnackbar("onDestroy")
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.run{
+            //GUARDAR VARIABLES
+            //PRIMITIVOS
+            putString("textoGuardado", textoGlobal)
+            //putInt("numeroGuardado",numero)
+        }
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        //Recuperar las variables
+        //primitivos
+        val textoRecuperado: String? = savedInstanceState.getString("textoGuardado")
+        //val textoRecuperado:Int?=savedInstanceState.getInt("numeroGuardado")
+        if (textoRecuperado != null) {
+            mostrarSnackbar(textoRecuperado)
+            textoGlobal = textoRecuperado
+        }
+    }
+
+
+
 
 }

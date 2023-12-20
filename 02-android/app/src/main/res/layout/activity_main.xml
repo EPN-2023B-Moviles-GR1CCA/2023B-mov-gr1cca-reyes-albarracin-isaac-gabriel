@@ -16,4 +16,27 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="188dp" />
+
+    <Button
+        android:id="@+id/btn_ciclo_vida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="C. VIDA"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btn_ir_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:text="L. View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ciclo_vida"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
