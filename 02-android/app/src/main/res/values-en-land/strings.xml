@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">Gr1accigra2023b</string>
+        <string name="texto_saludo">Cambio 1</string>
+        <color name="ejemplo_color">#F0D44F</color>
+        <color name="back">#139948</color>
+
+</resources>
