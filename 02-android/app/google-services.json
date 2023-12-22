@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558635971555",
+    "project_id": "b2023-gr1acc-igra",
+    "storage_bucket": "b2023-gr1acc-igra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558635971555:android:886be4cc49b04dbce0a6d6",
+        "android_client_info": {
+          "package_name": "com.example.gr1accigra2023b"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABOOBStNYePsI4TVP2MqJH7gIJ--T5fSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
