@@ -1,2 +1,2 @@
-1,Calculo,EPN,2023-02-13,true,1,2
+1,Fisica,EPN,2023-12-29,true,01,2
 2,Mecanica,EPN,2023-06-07,false,2

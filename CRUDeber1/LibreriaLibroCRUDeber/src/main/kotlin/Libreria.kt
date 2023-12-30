@@ -72,9 +72,9 @@ class Libreria(
 
         fun selectLibreria() {
             //Leer archivo
-            var path = Paths.get("src/main/resources/text/libreria.txt")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
             Files.lines(path, Charsets.UTF_8).forEach {
-                var valorCadena = it.split(",")
+                val valorCadena = it.split(",")
                 print(
                     "Núm. Libreria: " + valorCadena[0] + "\n"
                             + "Nombre: " + valorCadena[1] + "\n"
@@ -83,10 +83,10 @@ class Libreria(
                             + "Pública: " + valorCadena[4] + "\n"
                 )
                 println("Lista de Libros:")
-                var path = Paths.get("src/main/resources/text/libreria.txt")
+                val path = Paths.get("src/main/resources/text/libreria.txt")
                 Files.lines(path, Charsets.UTF_8).forEach {
-                    var splitLibros = it.split(",")
-                    var idLibro = splitLibros[0]
+                    val splitLibros = it.split(",")
+                    val idLibro = splitLibros[0]
                     for (i in 5..valorCadena.size - 1) {
                         if (idLibro == valorCadena[i]) {
                             println("\t" + splitLibros[0] + ") " + splitLibros[1] + " - " + splitLibros[2])
@@ -100,11 +100,11 @@ class Libreria(
 
         fun updateLibreria(nombreLibreria: String) {
             //Leer archivo
-            var path = Paths.get("src/main/resources/text/libreria.txt")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
             var flag = false
             var archivoUpdate = ""
             Files.lines(path, Charsets.UTF_8).forEach {
-                var valorCadena = it.split(",")
+                val valorCadena = it.split(",")
                 if (valorCadena[1] == nombreLibreria) {
                     var opcionUpdate = true
                     print(
@@ -115,10 +115,10 @@ class Libreria(
                                 + "Pública: " + valorCadena[4] + "\n"
                     )
                     println("Lista de Libros:")
-                    var path = Paths.get("src/main/resources/text/libreria.txt")
+                    val path = Paths.get("src/main/resources/text/libreria.txt")
                     Files.lines(path, Charsets.UTF_8).forEach {
-                        var splitLibros = it.split(",")
-                        var idLibro = splitLibros[0]
+                        val splitLibros = it.split(",")
+                        val idLibro = splitLibros[0]
                         for (i in 5..valorCadena.size - 1) {
                             if (idLibro == valorCadena[i]) {
                                 println("\t" + splitLibros[0] + ") " + splitLibros[1] + " - " + splitLibros[2])
@@ -127,29 +127,29 @@ class Libreria(
                     }
                     //Ver que atributo desea modificar
                     var newString: String = ""
-                    var arrayCadena = arrayOf<String>("0", "0", "0", "0", "0")
+                    val arrayCadena = arrayOf<String>("0", "0", "0", "0", "0")
                     do {
                         println("Elija el atributo a modificar: 1) Nombre, 2) Ubicación, 3) Fecha, 4) Pública, 5) Lista Libros")
-                        var atributoUpdate = readln().toInt()
+                        val atributoUpdate = readln().toInt()
                         when (atributoUpdate) {
                             (1) -> {
                                 print("Ingrese el nuevo nombre: ")
-                                var nombre = readln()
+                                val nombre = readln()
                                 arrayCadena.set(0, nombre)
                             }
 
                             (2) -> {
                                 print("Ingrese nueva ubicación: ")
-                                var ubicacion = readln()
+                                val ubicacion = readln()
                                 arrayCadena.set(1, ubicacion)
                             }
 
                             (3) -> {
                                 print("Ingrese la nueva fecha (AAAA-MM-DD): ")
-                                var fecha = readln()
-                                var auxFecha = fecha.split("-")
+                                val fecha = readln()
+                                val auxFecha = fecha.split("-")
                                 val formato = SimpleDateFormat("yyyy-MM-dd")
-                                var newFecha: Date =
+                                val newFecha: Date =
                                     Date(
                                         auxFecha[0].toInt() - 1900,
                                         auxFecha[1].toInt() - 1,
@@ -160,26 +160,26 @@ class Libreria(
 
                             (4) -> {
                                 print("Ingrese el nuevo tipo: ")
-                                var publica = readln()
+                                val publica = readln()
                                 arrayCadena.set(3, publica)
                             }
 
                             (5) -> {
                                 print("Seleccione una acción 1) Agregar Libro a la Libreria 2) Eliminar Libro de la Libreria: ")
-                                var opcionLista = readln().toInt()
+                                val opcionLista = readln().toInt()
                                 if (opcionLista == 1) {
                                     println("***LISTA DE LIBROS***")
                                     Libro.selectLibro()
                                     print("Seleccione los Libros a agregar a la libreria (1,2,...): ")
-                                    var newListLibros = readln()
+                                    val newListLibros = readln()
                                     arrayCadena.set(
                                         4,
                                         updateListaLibros(newListLibros, valorCadena[0].toInt())
                                     )
                                 } else {
                                     print("Seleccione los libros a eliminar de la libreria (1,2,...): ")
-                                    var deleteList = readln()
-                                    var auxLista =
+                                    val deleteList = readln()
+                                    val auxLista =
                                         deleteListaLibros(deleteList, valorCadena[0].toInt())
                                     arrayCadena.set(4, auxLista)
                                 }
@@ -187,7 +187,7 @@ class Libreria(
                         }
                         //Ver si desea seguir actualizando la libreria elegida
                         println("¿Desea seguir actualizando la Libreria elegida 1) SI - 2) NO?")
-                        var auxOpcion = readln().toInt()
+                        val auxOpcion = readln().toInt()
                         if (auxOpcion == 2) {
                             opcionUpdate = false //Terminar update de libreria
                             for (i in 0..arrayCadena.size - 1) {
@@ -225,9 +225,9 @@ class Libreria(
 
         fun updateListaLibros(lista: String, id: Int): String {
             var newLista = ""
-            var path = Paths.get("src/main/resources/text/libreria.txt")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
             Files.lines(path, Charsets.UTF_8).forEach {
-                var valorCadena = it.split(",")
+                val valorCadena = it.split(",")
                 if (valorCadena[0].toInt() == id) {
                     for (i in 5..valorCadena.size - 1) {
                         if (i == valorCadena.size - 1) {
@@ -244,10 +244,10 @@ class Libreria(
 
         fun deleteListaLibros(lista: String, id: Int): String {
             var newLista = ""
-            var path = Paths.get("src/main/resources/text/libreria.txt")
-            var splitListaParam = lista.split(",")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
+            val splitListaParam = lista.split(",")
             Files.lines(path, Charsets.UTF_8).forEach {
-                var valorCadena = it.split(",")
+                val valorCadena = it.split(",")
                 if (valorCadena[0].toInt() == id) {
                     for (i in 5..valorCadena.size - 1) {
                         var bandera = false
@@ -275,11 +275,11 @@ class Libreria(
 
         fun deleteLibreria(nombreLibreria: String) {
             //Leer archivo
-            var path = Paths.get("src/main/resources/text/libreria.txt")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
             var flag = false
             var archivoUpdate = ""
             Files.lines(path, Charsets.UTF_8).forEach {
-                var valorCadena = it.split(",")
+                val valorCadena = it.split(",")
                 if (valorCadena[1] == nombreLibreria) {
                     println("Libreria ELIMINADA")
                     flag = true
@@ -297,7 +297,7 @@ class Libreria(
 
 
         fun getNumLibreria(): Int {
-            var path = Paths.get("src/main/resources/text/libreria.txt")
+            val path = Paths.get("src/main/resources/text/libreria.txt")
             var numTotal = 0
             Files.lines(path, Charsets.UTF_8).forEach {
                 numTotal += 1
@@ -307,15 +307,15 @@ class Libreria(
 
 
         fun setArrayListLibroLibreria(arrayLibros: Array<Int>): ArrayList<Libro> {
-            var path = Paths.get("src/main/resources/text/libro.txt")
-            var listaLibros: ArrayList<Libro> = ArrayList()
+            val path = Paths.get("src/main/resources/text/libro.txt")
+            val listaLibros: ArrayList<Libro> = ArrayList()
             var i = 0
             Files.lines(path, Charsets.UTF_8).forEach {
-                var stringSplit = it.split(",")
+                val stringSplit = it.split(",")
                 if (i < arrayLibros.size) {
                     if (stringSplit[0] == arrayLibros[i].toString()) {
-                        var splitFecha = stringSplit[4].split("-")
-                        var temaAux = Libro(
+                        val splitFecha = stringSplit[4].split("-")
+                        val temaAux = Libro(
                             stringSplit[0].toInt(),
                             stringSplit[1],
                             stringSplit[2],
@@ -336,15 +336,15 @@ class Libreria(
     }
 
 
-    fun insertLibreria(sizeArrayTemas: Int) {
+    fun insertLibreria(sizeArrayLibros: Int) {
         //Enviar al archivo
-        var path = Paths.get("src/main/resources/text/libreria.txt")
+        val path = Paths.get("src/main/resources/text/libreria.txt")
         val formato = SimpleDateFormat("yyyy-MM-dd")
         var data =
             this.idLibreria.toString() + "," + this.nombreLibreria + "," + this.ubicacionLibreria + "," + formato.format(this.fechaCreacion) + "," + this.esPublica + ","
         var i = 1
         for (item in this.listaLibros!!) {
-            if (i < sizeArrayTemas) {
+            if (i < sizeArrayLibros) {
                 data += item.getIdLibro().toString() + ","
             } else {
                 data += item.getIdLibro().toString()
