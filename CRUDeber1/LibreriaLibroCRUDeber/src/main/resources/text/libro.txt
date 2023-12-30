@@ -1,0 +1,5 @@
+1,Limites,Lethold,2023-03-23,9.99
+2,Derivadas,Newton,1670-08-13,10.0
+3,Dinamica,Edagar Haro,1960-08-03,13.0
+4,Programacion,D Commer,1904-12-01,10.05,
+5,Carta al padre,Franz Kafka,1919-11-01,5.6
