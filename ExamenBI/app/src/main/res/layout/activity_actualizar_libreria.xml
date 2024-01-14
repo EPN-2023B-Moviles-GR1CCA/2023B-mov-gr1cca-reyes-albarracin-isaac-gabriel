@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarLibreria">
+
+    <EditText
+        android:id="@+id/et_upd_idLibria"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <EditText
+        android:id="@+id/et_upd_nombLibria"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="453dp"
+        android:ems="10"
+        android:hint="Libreria"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idLibria"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idLibria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idLibria" />
+
+    <EditText
+        android:id="@+id/et_upd_ubiLibria"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="386dp"
+        android:ems="10"
+        android:hint="Ubicación Libreria"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_nombLibria"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_nombLibria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_nombLibria" />
+
+    <EditText
+        android:id="@+id/et_upd_fechaLibria"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="307dp"
+        android:ems="10"
+        android:hint="AAAA-MM-DD"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_ubiLibria"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_ubiLibria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_ubiLibria" />
+
+    <EditText
+        android:id="@+id/et_upd_esLibria"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="214dp"
+        android:ems="10"
+        android:hint="¿Es Pública? (Si o No)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_fechaLibria"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_fechaLibria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_fechaLibria" />
+
+    <Button
+        android:id="@+id/btn_upd_Libreria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="130dp"
+        android:text="ACTUALIZAR LIBRERIA"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_esLibria"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_esLibria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_esLibria" />
+
+
+</RelativeLayout>
