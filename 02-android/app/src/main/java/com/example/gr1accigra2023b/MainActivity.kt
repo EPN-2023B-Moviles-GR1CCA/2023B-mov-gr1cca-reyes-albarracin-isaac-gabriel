@@ -7,6 +7,7 @@ import android.provider.ContactsContract
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -104,10 +105,15 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 irActividad(FRecyclerView::class.java)
             }
+        val botonGoogleMaps=findViewById<Button>(R.id.btn_google_maps)
+        botonGoogleMaps
+            .setOnClickListener{
+                irActividad(GGoogleMapsActivity::class.java)
+            }
 
     } // Termina onCreate
     fun abrirActividadConParametros(
-        clase: Class<*>
+        clase: SafeParcelable.Class<*>
     ){
         val intentExplicito = Intent(this, clase)
         // Enviar parametros (solamente variables primitivas)
