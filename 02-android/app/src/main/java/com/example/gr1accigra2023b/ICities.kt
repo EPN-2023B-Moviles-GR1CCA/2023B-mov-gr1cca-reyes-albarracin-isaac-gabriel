@@ -2,7 +2,7 @@ package com.example.gr1accigra2023b
 
 class ICities (
     public var name: String?,
-    public var state: String,
+    public var state: String?,
     public var country: String?,
     public var capital: Boolean?,
     public var population: Long?,
