@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnMarcas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#558B2F"
+        android:text="Marcas de computadoras"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp" />
+
+    <Button
+        android:id="@+id/btnComputadoras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00695C"
+        android:text="Computadoras"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:drawablePadding="10dp" />
+
+</LinearLayout>

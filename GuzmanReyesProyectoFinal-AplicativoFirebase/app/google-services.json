@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769775927337",
+    "project_id": "proyectomoviles-433ae",
+    "storage_bucket": "proyectomoviles-433ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769775927337:android:3004494bf33a42c0ef9c38",
+        "android_client_info": {
+          "package_name": "com.example.guzmanreyesproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDomeJizLTxuCjOLYP1hXhTgJ9Y0utjPxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

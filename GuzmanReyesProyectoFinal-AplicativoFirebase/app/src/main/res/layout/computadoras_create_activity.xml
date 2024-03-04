@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Spinner
+        android:id="@+id/spinnerMarcas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"/>
+
+    <EditText
+        android:id="@+id/editTextModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Modelo"
+        android:background="#F0F0F0"
+        android:textColorHint="#9E9E9E"
+        android:textColor="#212121"/>
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:inputType="numberDecimal"
+        android:background="#F0F0F0"
+        android:textColorHint="#9E9E9E"
+        android:textColor="#212121"/>
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E0E0E0"/>
+
+    <EditText
+        android:id="@+id/editTextAñoLanzamiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año de Lanzamiento"
+        android:inputType="number"
+        android:background="#F0F0F0"
+        android:textColorHint="#9E9E9E"
+        android:textColor="#212121"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxEnProduccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En Producción"
+        android:buttonTint="#4CAF50"/>
+
+    <Button
+        android:id="@+id/buttonAgregarComputadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Computadora"
+        android:onClick="onAgregarComputadoraClick"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

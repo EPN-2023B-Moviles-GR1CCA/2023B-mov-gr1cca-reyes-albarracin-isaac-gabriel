@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:targetApi="31">
+        <activity
+            android:name=".computadoras.update.UpdateComputadorasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".computadoras.delete.DeleteComputadoraActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_computadora"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".computadoras.read.ReadComputadorasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".computadoras.create.AddComputadoraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".computadoras.ComputadorasActivity"
+            android:exported="false"
+            android:label="@string/title_activity_computadoras"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".marca.update.UpdateSingleMarcaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update_single_marca"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".marca.update.UpdateMarcaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update_marca" />
+        <activity
+            android:name=".marca.read.ReadMarcaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".marca.create.AddMarcaActivity"
+            android:exported="false" />
+        <activity android:name=".marca.delete.DeleteMarcaActivity" />
+        <activity android:name=".marca.MarcaActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

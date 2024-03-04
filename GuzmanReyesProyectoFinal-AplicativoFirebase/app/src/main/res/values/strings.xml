@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GuzmanReyesProyecto</string>
+    <string name="title_activity_update_marca">UpdateMarcaActivity</string>
+    <string name="title_activity_update_single_marca">UpdateSingleMarcaActivity</string>
+    <string name="title_activity_computadoras">ComputadorasActivity</string>
+    <string name="title_activity_delete_computadora">DeleteComputadoraActivity</string>
+</resources>

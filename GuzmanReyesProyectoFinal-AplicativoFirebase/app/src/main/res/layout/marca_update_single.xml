@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextPaisOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="País de Origen"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextFundacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Año de Fundación"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttonActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:background="#007FFF"
+        android:textColor="#FFF"/>
+</LinearLayout>

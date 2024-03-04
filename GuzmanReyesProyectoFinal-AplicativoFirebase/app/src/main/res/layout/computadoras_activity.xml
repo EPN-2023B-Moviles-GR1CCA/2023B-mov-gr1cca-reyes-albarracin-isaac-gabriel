@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnAddComputadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Computadora"
+        android:backgroundTint="#D19696"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnReadComputadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Computadoras"
+        android:backgroundTint="#D19696"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnDeleteComputadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Computadora"
+        android:backgroundTint="#D19696"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnUpdateComputadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Computadora"
+        android:backgroundTint="#D19696"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+</LinearLayout>

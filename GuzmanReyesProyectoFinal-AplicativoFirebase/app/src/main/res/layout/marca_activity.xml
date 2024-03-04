@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/btnAddMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:text="Agregar Marca"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnReadMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:text="Ver Marcas"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnDeleteMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:text="Eliminar Marca"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnUpdateMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:text="Actualizar Marca"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:textAllCaps="false"
+        android:padding="12dp" />
+
+</LinearLayout>

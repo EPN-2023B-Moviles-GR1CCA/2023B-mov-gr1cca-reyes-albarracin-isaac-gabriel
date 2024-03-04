@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/editTextNombreMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:hint="Nombre de la Marca"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"/>
+
+    <EditText
+        android:id="@+id/editTextPaisOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:hint="País de Origen"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"/>
+
+    <EditText
+        android:id="@+id/editTextAnoFundacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#D19696"
+        android:hint="Año de Fundación"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxEsIndependiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Es Independiente"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/buttonAgregarMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#558B2F"
+        android:text="Agregar Marca"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
